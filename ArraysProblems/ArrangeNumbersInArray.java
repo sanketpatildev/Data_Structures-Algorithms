@@ -36,6 +36,7 @@ import java.util.Scanner;
 //1 3 5 7 9 8 6 4 2
 //1 3 2
 
+Answer
 public class ArrangeNumbersInArray {
 	
 	public static int[] PopulateArray(int arr[],int n) {
