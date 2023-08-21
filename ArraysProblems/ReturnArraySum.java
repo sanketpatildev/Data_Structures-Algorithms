@@ -46,7 +46,8 @@ public class ReturnArraySum {
 		return sum;
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		int arr[]=InputOfArray.takeInput();
 		int result=sumOfArray(arr);
 		System.out.println("sum of an Array Element is " + result);
