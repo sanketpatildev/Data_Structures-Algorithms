@@ -1,0 +1,76 @@
+@author Sanket Patil
+Q1)  Correct Statement
+Figure out the correct statement for the below line of code ?
+int[] arr = new int[5];
+arr = new int[6];
+Options :-
+      The code has compile error because the variable arr cannot be changed once it is assigned.
+      The code will compile and run fine. The second line assigns a new array to arr.
+      The code has compile errors because we cannot assign a different size array to arr.
+      None of these.
+ANSWER :-
+     The code will compile and run fine. The second line assigns a new array to arr.
+--------------------------------------------------------------------------------------------------------------------
+Q2) Predict The Output
+What will be the output of the following code ?
+int arr[] = new int[5];
+System.out.println(arr[0]);
+Options :-
+	Garbage value
+	ArrayIndexOutOfBoundsException
+	0
+ANSWER :-
+	0
+Solution Description
+####Whenever an integer array is created, all elements are initialised to 0.
+-------------------------------------------------------------------------------------------------------------------------
+Q3) Predict The Output
+What will be the output of the following code ?
+char chArray[] = new char[15];
+System.out.println(chArray[15]);
+Options :-
+	Garbage value
+	ArrayIndexOutOfBoundsException
+	0
+ANSWER :-
+	ArrayIndexOutOfBoundsException
+Solution Description
+#### For an array of size n, indexes of the array range from 0 to (n - 1). So here for array of size 15, valid indices are from 0 to 14. This chArray[15] is trying to access an invalid index which gives ArrayIndexOutOfBoundsException.
+-------------------------------------------------------------------------------------------------------------------------
+Q4) Predict The Output
+What will be the output of the following code ?
+boolean arr[] = new boolean[5];
+System.out.println(arr[0]);
+ANSWER :-
+	false
+Solution Description
+####Whenever an boolean array is created, all elements are initialised to false.
+-----------------------------------------------------------------------------------------------------------------------------
+Q5) Predict The Output
+What will be the output ?
+public class Main {
+    public static void main(String args[]){
+      int arr[] = new int[5];
+      arr[1] = 10;
+      arr = new int[2];
+      System.out.println(arr[0]);   
+    }
+}
+Options :-
+	This problem has only one correct answer
+	10
+	0
+	Compilation Error
+ANSWER :-
+	0
+Solution Description
+####arr initially refers to an array of size 5, line 2 assigns 10 to arr[1] but in line 3 arr is made to point to a new array of size 2. By default all elements of integer array are initialized to 0. Hence line 4 will print 0.
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
