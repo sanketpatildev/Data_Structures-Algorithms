@@ -1,3 +1,4 @@
+@Sanket Patil
 import java.util.Scanner;
 
 //Question
