@@ -1,3 +1,4 @@
+@Sanket Patil
 package Array;
 //Find Duplicate
 //Send Feedback
