@@ -77,11 +77,15 @@ Options :-
 ANSWER :-
 	arr.length
 ---------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
+Q7) Non Primitives
+Which among the following are non-primitive datatypes?
+Options :-
+	Array
+	int
+	char
+	Scanner
+ANSWER :-
+	Array, Scanner
 
 
 
