@@ -129,9 +129,26 @@ ANSWER :-
 	15
 
 ---------------------------------------------------------------------------------------------------------------------------------
+Q10) Predict The Output
+What will be the output of the following code ?
+public class Main {
+    public static void change(int input[]){
+    input = new int[5];
+    input[0] = 15;
+    }
 
-
-
+    public static void main(String args[]){
+        int arr[] = new int[5];
+        change(arr);
+        System.out.println(arr[0]);
+    }
+}
+Options :-
+	15
+	0
+	Error
+ANSWER :-
+	0
 
 
 
