@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+Q) Is Unique : Implement an algorithm to determine if a string has all unique characters. 
+ Solution:- 
+ we'll assume for simplicity the character set is ASCII.
+ One solution is to create an array of boolean values , where the falg at index i indicates whether character i in the alphabet contained in the string .
+ The second time you see this character you can immediately return false.
+ we can immediately return false if the string length exceeds the number of unique character in the alphabet.
+ After all , you cna't form a string of 280 characters out of 128-character alphabet.
+ 
+public class IsUnique 
+{
+	public static String inputString()
+	{
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter your String :- ");
+		String input = scanner.nextLine();
+		return input;
+	}
+	public static boolean isUnique(String str)
+	{
+		if(str.length() > 128) return false;
+		// create a default false value boolean char array with 128 char set capacity
+		boolean char_set[] = new boolean[128];
+		for(int  i = 0 ; i < str.length(); i++)
+		{
+			int value = str.charAt(i);
+			if(char_set[value])
+			{
+				return false;
+			}
+			char_set[value] = true;
+		}
+		return true;
+	}
+	public static void main(String[] args) 
+	{
+		String inputString = inputString();
+		System.out.println(isUnique(inputString));
+	}
+}
+The time complexity for this code is O(n), where n is the length of the string. The space complexity is O(1).
+you could argue the time complexity is O(1), since the for loop will never iterate through more than 128 characters.
+if you don't want to assume the character set is fixed, you could express it as O(c) time, where c is the size of the character set. 
